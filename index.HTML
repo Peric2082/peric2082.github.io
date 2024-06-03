@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Troco</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Troco</h1>
+        <label for="destino">Selecione a linha:</label>
+        <select id="destino">
+            <option value="0">Selecionar Destino</option>
+            <option value="5.15">ÁGUAS LINDAS ⮔ CEILÂNDIA</option>
+            <option value="6.75">ÁGUAS LINDAS ⮔ TAGUATINGA</option>
+            <option value="10.85">ÁGUAS LINDAS ⮔ BRASÍLIA</option>
+        </select>
+        <label for="valor-pago">Digite o valor pago:</label>
+        <input type="number" id="valor-pago" placeholder="Digite o valor pago">
+        <div class="buttons">
+            <button id="calcular-btn">Calcular Troco</button>
+            <button id="limpar-btn">Nova Passagem</button>
+        </div>
+        <p id="resultado">Troco: R$ 0.00</p>
+        <p id="aviso" class="aviso"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
